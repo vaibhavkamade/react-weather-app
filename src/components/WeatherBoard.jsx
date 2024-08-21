@@ -9,13 +9,13 @@ const WeatherBoard = ({ response }) => {
 
   return (
     <div className='weather'>
-      <h3>{response.name}, {response.sys.country}</h3>
-      <h5> <span>Temperature: </span> {main.temp}°C</h5>
-      <h5> <span>Humidity:</span> {main.humidity}%</h5>
-      <h5> <span>Weather:</span> {weather[0].description}</h5>
-      <h5> <span>Sunset: </span>{new Date(sys.sunset * 1000).toLocaleTimeString()}</h5>
-      <h5> <span>Sunrise:</span> {new Date(sys.sunrise * 1000).toLocaleTimeString()}</h5>
-      <h5> <span>Wind Speed:</span> {wind.speed} m/s</h5>
+      <h1>{response.name}, {response.sys.country}</h1>
+      <h3> <span>Temperature: </span> {main.temp}°C</h3>
+      <h3> <span>Humidity:</span> {main.humidity}%</h3>
+      <h3> <span>Weather:</span> {weather[0].description}</h3>
+      <h3> <span>Sunset: </span>{new Date(sys.sunset * 1000).toLocaleTimeString()}</h3>
+      <h3> <span>Sunrise:</span> {new Date(sys.sunrise * 1000).toLocaleTimeString()}</h3>
+      <h3> <span>Wind Speed:</span> {wind.speed} m/s</h3>
     </div>
   );
 };
