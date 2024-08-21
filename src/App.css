@@ -37,6 +37,8 @@ input{
   margin-right: 10px;
   font-size: 15px;
   font-weight: 700;
+  background-color: white;
+  color:black
 }
 
 button:hover{
